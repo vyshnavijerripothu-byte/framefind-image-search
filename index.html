@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapScape | Discover Images</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <p class="brand">SNAPSCAPE</p>
+    <h1>Find your next visual inspiration.</h1>
+    <p class="tagline">
+      Explore the world, one image at a time.
+    </p>
+
+    <form id="search-form">
+      <label for="search-input">What would you like to explore?</label>
+      <div class="search-row">
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Try nature, space, or architecture..."
+        >
+        <button id="search-button" type="submit">Search</button>
+      </div>
+    </form>
+
+    <button id="clear-button" type="button">Clear search</button>
+
+    <div class="suggestions">
+      <span>Explore ideas:</span>
+      <button type="button" class="chip">Nature</button>
+      <button type="button" class="chip">Space</button>
+      <button type="button" class="chip">Cities</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <p id="result-count">Your discoveries will appear here.</p>
+    <p id="empty-state">Search for a topic to discover beautiful images.</p>
+    <section id="results" aria-label="Image search results"></section>
+  </main>
+
+  <footer>
+    <p>SnapScape — inspiration is everywhere.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
